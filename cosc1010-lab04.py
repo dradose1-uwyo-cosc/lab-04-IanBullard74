@@ -4,7 +4,9 @@
 # Lab 03 
 # Lab Section: 14
 # Sources, people worked with, help given to: 
-# Looked up on google "how to use two different lists in a for loop in python" and found I could use zip
+# Looked up on google "how to use two different lists in a for loop in python" and found I could use zip.
+
+#looked up how to round the float on a number, and used in on the min temps average.
 
 
 
@@ -114,7 +116,7 @@ for maxa, mina in zip(max_temps, min_temps):
     min_sum = min_sum + mina
     min_avg = min_sum / len(min_temps)
 print(max_avg)
-print(min_avg)
+print(round(min_avg, 2))
 
 highest = max_temps.index(max(max_temps))
 print(f"The highest temp was {max_temps[highest]} degrees")
