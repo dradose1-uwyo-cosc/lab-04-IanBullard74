@@ -1,12 +1,10 @@
-# Your Name Here
+# Ian Bullard
 # UWYO COSC 1010
-# Submission Date
+# 9/30/24
 # Lab 03 
-# Lab Section: 
+# Lab Section: 14
 # Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# Looked up on google "how to use two different lists in a for loop in python" and found I could use zip
 
 
 
@@ -103,3 +101,22 @@ min_temps = [
 # HINT: You can find this information without using any logic or looping.
 
 
+
+# Looked up on google "how to use two different lists in a for loop in python" and found I could use zip
+
+max_sum = 0
+max_avg = 0
+min_avg = 0
+min_sum = 0
+for maxa, mina in zip(max_temps, min_temps):
+    max_sum = max_sum + maxa
+    max_avg = max_sum / len(max_temps)
+    min_sum = min_sum + mina
+    min_avg = min_sum / len(min_temps)
+print(max_avg)
+print(min_avg)
+
+highest = max_temps.index(max(max_temps))
+print(f"The highest temp was {max_temps[highest]} degrees")
+coldest = min_temps.index(min(min_temps))
+print(f"The lowest temp was {min_temps[coldest]} degrees")

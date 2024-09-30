@@ -1,8 +1,8 @@
-# [Name]
-## [Assignment #]
-## [Submission date: MM/DD/YY]
+# [Ian Bullard]
+## [Assignment 4]
+## [Submission date: 09/30/24]
 ## Worked with/sources 
-* example
+* Google (input and output of search is in code)
 * example
 * example
 * example
